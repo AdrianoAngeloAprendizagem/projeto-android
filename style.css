@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+@font-face {
+    font-family: 'Idroid';
+    src: url(fontes/idroid.otf) format('opentype');
+}
+
+:root {
+
+    --cor0: #4AEEB5;
+    --cor1: #02EB99;
+    --cor2: #01B878;
+    --cor3: #016B46;
+    --cor4: #216B51;
+
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque: 'Oswald', sans-serif;
+    --fonte-android: 'Idroid', 'Times' , 'serif';
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: var(--cor0);
+    font-size: 14px;
+}
+
+/* CSS - Cabeçalho - Inicio */
+header{
+    background-image: linear-gradient(180deg, var(--cor2), var(--cor3), var(--cor4));
+    color: white;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+}
+
+header > h1 {
+    text-align: center;
+    padding: 10px;
+    font-family: var(--fonte-destaque);
+}
+
+header > p {
+    text-align: center;
+    margin: 15px auto;
+    width: 350px;
+}
+
+nav{
+    padding: 6px;
+}
+
+nav > ul{
+    margin-left: 5px;
+}
+
+nav > ul > li{
+    display: inline;
+}
+
+nav > ul > li > a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 5px;
+    transition-duration: 0.5s;
+}
+
+nav > ul > li > a:hover {
+    background-color: rgba(255, 255, 255, 0.502);
+    border-radius: 3px;
+}
+
+/* CSS - Cabeçalho - Fim */
+
+/* CSS - Principal - Inicio */
+
+main{
+    max-width: 800px;
+    background-color: white;
+    margin: 0px auto 10px auto;
+    text-align: justify;
+    padding: 10px 10px 0px 10px;
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.188);
+}
+
+p{
+    text-indent: 1.5em;
+    margin: 10px 0px;
+}
+
+img{
+    width: 100%;
+    margin: 10px auto;
+}
+
+a{
+    text-decoration: none;
+    
+}
+
+a > span {
+    color: var(--cor4);
+    font-weight: bold;
+}
+
+span {
+    color: var(--cor4);
+    font-weight: bold;
+}
+
+.titulo{
+    font-family: var(--fonte-android);
+    color: var(--cor3);
+    background-color: var(--cor0);
+    background-image: linear-gradient(90deg, var(--cor0), var(--cor0), white);
+    margin: 15px 0px;
+}
+
+#titulo_principal{
+    background-color: white;
+    background-image: none;
+}
+
+#bugdroid{
+    max-width: 350px;
+    display: block;
+    margin: auto;
+}
+
+#iframesection{
+    background-color: var(--cor3);
+    margin: auto -10px;
+}
+
+#videodroid{
+    width: 95%;
+    margin: 2.5%;
+}
+
+#saibamaissection{
+    padding: 10px;
+}
+
+#aprendamaisprincipal{
+    background-color: #b1ffe4;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.184);
+}
+
+#aprendamaistitulo{
+    background-color: #027c52;
+    color: white;
+    font-weight: bold;
+    padding: 10px 0px;
+    border-radius: 10px 10px 0px 0px;
+    
+}
+
+#aprendamais{
+    background-color: #b1ffe4;
+    padding: 0px 10px 10px 10px;
+    border-radius: 10px;
+    
+}
+
+
+article > ul {
+    list-style-type: '\2714\00A0\00A0';
+    list-style-position: inside;
+    columns: 2;
+}
+
+
+
+/* CSS - Principal - Fim */
+
+/* CSS - Rodapé - Inicio */
+footer{
+    bottom: 0px;
+    background-color: var(--cor3);
+    width: 100%;
+    text-align: center;
+    color: white;
+    padding: 10px 0px;
+}
